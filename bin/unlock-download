@@ -1,0 +1,5 @@
+#!/bin/sh
+
+xattr -d -r com.apple.quarantine $1
+spctl --add --label Approved  $1
+
